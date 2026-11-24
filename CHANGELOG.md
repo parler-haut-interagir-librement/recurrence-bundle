@@ -4,9 +4,18 @@ All notable changes to `phil/recurrence-bundle` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## 0.1.2-alpha - 2026-11-24
+
+### Changed
+
+- The Node tests resolve `@hotwired/stimulus` to their stub with a synchronous hook given to `module.registerHooks()`,
+  on the loading thread, instead of `module.register()`, which Node deprecates (DEP0205).
+- Requires the latest minor of each dependency (`symfony/translation-contracts` 3.8), and of each development
+  requirement (`doctrine/orm` 3.8, `doctrine/dbal` 4.6, `doctrine/doctrine-bundle` 3.4, `twig/twig` 3.31).
+
 ## 0.1.1-alpha - 2026-11-17
 
-The next version is 0.1.1-alpha: documentation only.
+Documentation only.
 
 ### Changed
 
